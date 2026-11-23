@@ -12,4 +12,4 @@ Implementación de algoritmos de ordenamiento por selección para las alertas de
 *(Aquí puedes insertar o adjuntar una imagen de tu diagrama de clases actualizado que incluya los métodos nuevos en la clase central: `ordenar_alertas()` y `buscar_animal_binaria()`)*
 
 ## Evidencia de Ejecución de main.py
-*(Aquí puedes pegar o describir la captura de pantalla de la terminal mostrando el ordenamiento de alertas por prioridad/hora y las pruebas de búsqueda binaria con el primer, último e inexistente código)*
+<img width="1276" height="444" alt="image" src="https://github.com/user-attachments/assets/07082df8-2249-4b0e-b6aa-5f7e56498d1e" />
