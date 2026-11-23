@@ -9,7 +9,14 @@
 Implementación de estructuras de datos lineales tipo **Cola (FIFO)** para la gestión ordenada de alertas de collares (`ColaAlertas`) y tipo **Pila/LIFO** para el registro y control de acciones en la bitácora de patrulla (`BitacoraPatrulla`). Se integraron ambos sistemas dentro de la clase central `SistemaMonitoreo` con métodos de atención secuencial y reversión de anotaciones.
 
 ## Diagrama de Clases Actualizado
+<<<<<<< HEAD
 *(Aquí puedes insertar o adjuntar una imagen de tu diagrama de clases actualizado que incluya las nuevas clases `ColaAlertas` y `BitacoraPatrulla`, junto con su relación y métodos en la clase central `SistemaMonitoreo`)*
 
 ## Evidencia de Ejecución de main.py
 *(Aquí puedes insertar la captura de pantalla de tu terminal ejecutando exitosamente el archivo `main.py` de la Entrega 6, mostrando el encolado de alertas, atención ordenada, pruebas de la bitácora y vaciado de la cola)*
+=======
+<img width="290" height="362" alt="image" src="https://github.com/user-attachments/assets/b5f4caed-1cdb-43db-9f1d-fded821c604e" />
+
+## Evidencia de Ejecución de main.py
+<img width="1205" height="455" alt="image" src="https://github.com/user-attachments/assets/b25d2630-ed9d-4902-b1f2-2e0a595e4d63" />
+>>>>>>> 36d25bc82da15badeffa36d43ea87adad0847282
