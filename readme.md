@@ -1,16 +1,15 @@
-# Proyecto: Guardianes del Petén - Entrega 4
+# Proyecto: Guardianes del Petén - Entrega 5
 
 - **Nombre completo:** Sebastián Chávez Montiel
 - **Carné:** 202606031
-- **Grupo:** 2 
-- **Fecha:** 08 de noviembre de 2026
+- **Grupo:** 2
+- **Fecha:** 23 de noviembre de 2026
 
-## Descripción de la Entrega 4
-Implementación de algoritmos de ordenamiento por selección para las alertas del sistema y búsqueda binaria para la localización eficiente de animales por código.
+## Descripción de la Entrega 5
+Implementación de estructuras jerárquicas y métodos de **recursividad** en la clase `Zona` para la gestión de subzonas y animales, permitiendo mostrar el mapa de forma anidada, conteo recursivo de animales y búsqueda eficiente de sectores dentro del sistema de monitoreo.
 
 ## Diagrama de Clases Actualizado
-<img width="298" height="344" alt="image" src="https://github.com/user-attachments/assets/29d50297-4966-44c2-a420-93a6cbdfbdcc" />
-
+*(Aquí puedes insertar o adjuntar una imagen de tu diagrama de clases actualizado que incluya la clase `Zona` con las listas `subzonas` y `animales`, así como sus métodos recursivos `mostrar()`, `contar_animales()` y `buscar_sector()`)*
 
 ## Evidencia de Ejecución de main.py
-<img width="1276" height="444" alt="image" src="https://github.com/user-attachments/assets/07082df8-2249-4b0e-b6aa-5f7e56498d1e" />
+*(Aquí puedes insertar la captura de pantalla de tu terminal ejecutando exitosamente el archivo `main.py` de la Entrega 5)*
