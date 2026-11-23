@@ -9,7 +9,8 @@
 Implementación de algoritmos de ordenamiento por selección para las alertas del sistema y búsqueda binaria para la localización eficiente de animales por código.
 
 ## Diagrama de Clases Actualizado
-*(Aquí puedes insertar o adjuntar una imagen de tu diagrama de clases actualizado que incluya los métodos nuevos en la clase central: `ordenar_alertas()` y `buscar_animal_binaria()`)*
+<img width="298" height="344" alt="image" src="https://github.com/user-attachments/assets/29d50297-4966-44c2-a420-93a6cbdfbdcc" />
+
 
 ## Evidencia de Ejecución de main.py
 <img width="1276" height="444" alt="image" src="https://github.com/user-attachments/assets/07082df8-2249-4b0e-b6aa-5f7e56498d1e" />
