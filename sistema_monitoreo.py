@@ -89,3 +89,18 @@ class SistemaMonitoreo:
                 fin = medio - 1
 
         return None
+
+    def contar_animales(self) -> int:
+        """Suma lo que devuelve cada zona de primer nivel (recursivo)."""
+        total = 0
+        for zona in self.zonas:
+            total += zona.contar_animales()
+        return total
+
+    def buscar_sector(self, nombre: str):
+        """Pregunta a cada zona de primer nivel para iniciar la búsqueda recursiva de sectores."""
+        for zona in self.zonas:
+            resultado = zona.buscar_sector(nombre)
+            if resultado is not None:
+                return resultado
+        return None
