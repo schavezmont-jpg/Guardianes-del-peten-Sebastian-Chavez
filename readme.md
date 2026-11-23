@@ -9,7 +9,7 @@
 Implementación de estructuras jerárquicas y métodos de **recursividad** en la clase `Zona` para la gestión de subzonas y animales, permitiendo mostrar el mapa de forma anidada, conteo recursivo de animales y búsqueda eficiente de sectores dentro del sistema de monitoreo.
 
 ## Diagrama de Clases Actualizado
-*(Aquí puedes insertar o adjuntar una imagen de tu diagrama de clases actualizado que incluya la clase `Zona` con las listas `subzonas` y `animales`, así como sus métodos recursivos `mostrar()`, `contar_animales()` y `buscar_sector()`)*
+<img width="290" height="362" alt="image" src="https://github.com/user-attachments/assets/b5f4caed-1cdb-43db-9f1d-fded821c604e" />
 
 ## Evidencia de Ejecución de main.py
-*(Aquí puedes insertar la captura de pantalla de tu terminal ejecutando exitosamente el archivo `main.py` de la Entrega 5)*
+<img width="1205" height="455" alt="image" src="https://github.com/user-attachments/assets/b25d2630-ed9d-4902-b1f2-2e0a595e4d63" />
