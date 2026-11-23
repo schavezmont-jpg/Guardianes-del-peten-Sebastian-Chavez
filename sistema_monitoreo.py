@@ -5,6 +5,8 @@ from zona import Zona
 from alerta import Alerta
 from lectura import Lectura
 from servicio_sms import ServicioSMS
+from cola_alertas import ColaAlertas
+from bitacora_patrulla import BitacoraPatrulla
 
 class SistemaMonitoreo:
     def __init__(self):
@@ -13,6 +15,8 @@ class SistemaMonitoreo:
         self.zonas = []
         self.alertas = []
         self.lecturas = []
+        self.cola_alertas = ColaAlertas()
+        self.bitacora = BitacoraPatrulla()
 
     def buscar_animal(self, codigo: str):
         for a in self.animales:
@@ -48,7 +52,6 @@ class SistemaMonitoreo:
         return True
 
     def ordenar_alertas(self):
-        """Ordena las alertas por prioridad (alta primero, luego media) y por hora más temprana."""
         def nivel(alerta):
             if alerta.prioridad == "alta":
                 return 1
@@ -71,9 +74,7 @@ class SistemaMonitoreo:
                 self.alertas[i], self.alertas[min_idx] = self.alertas[min_idx], self.alertas[i]
 
     def buscar_animal_binaria(self, codigo: str):
-        """Busca un animal por su código usando Búsqueda Binaria sobre una lista ordenada por código."""
         self.animales.sort(key=lambda a: a.codigo)
-
         inicio = 0
         fin = len(self.animales) - 1
 
@@ -91,16 +92,29 @@ class SistemaMonitoreo:
         return None
 
     def contar_animales(self) -> int:
-        """Suma lo que devuelve cada zona de primer nivel (recursivo)."""
         total = 0
         for zona in self.zonas:
             total += zona.contar_animales()
         return total
 
     def buscar_sector(self, nombre: str):
-        """Pregunta a cada zona de primer nivel para iniciar la búsqueda recursiva de sectores."""
         for zona in self.zonas:
             resultado = zona.buscar_sector(nombre)
             if resultado is not None:
                 return resultado
         return None
+
+    def atender_siguiente_alerta(self, codigo_guardarrecursos: str):
+        """Saca de la cola la alerta más antigua, la marca como atendida y lo anota en la bitácora."""
+        if self.cola_alertas.esta_vacia():
+            print("  No hay alertas por atender")
+            return None
+        
+        alerta_atendida = self.cola_alertas.atender()
+        alerta_atendida.atendida = True  
+        
+        # Registrar en la bitácora de patrulla de forma segura
+        detalle = f"Guarcerecursos {codigo_guardarrecursos} atendió alerta: {alerta_atendida}"
+        self.bitacora.registrar(detalle)
+        
+        return alerta_atendida
